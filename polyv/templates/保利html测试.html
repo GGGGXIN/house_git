@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>html测试</h1>
+<div id="player"></div>
+<script src="//player.polyv.net/script/player.js"></script>
+<script>
+    var player = polyvPlayer({
+        wrap: '#player',
+        width: 800,
+        height: 533,
+        vid: '03b56854c0580b39cd5684f79fdf95da_0',
+    });
+</script>
+<script src='https://player.polyv.net/script/polyvplayer.min.js'></script>
+<div id='player2'></div>
+<script>
+    var player = polyvObject('#player2').videoPlayer({
+        'width':'600',
+        'height':'373',
+        'vid' : '03b56854c0580b39cd5684f79fdf95da_0',
+        'code' : 'myRandomCodeValue'
+    });
+</script>
+</body>
+</html>
